@@ -34,7 +34,7 @@ function animatePress(currentColor) {
     }, 200);
   }
 // detecting if key is pressed then start or touch screen or anything
-$(document).on("keypress", function () {
+$(document).on("keypress touchstart", function () {
 
     if (!gameStarted) {
         $("#level-title").text("LEVEL "+level);
