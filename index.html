@@ -36,6 +36,18 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script src="./game.js"></script>
+  <script>
+    // JavaScript code to detect input type and update h1 text accordingly
+    function isTouchDevice() {
+      return 'ontouchstart' in document.documentElement;
+    }
+
+    $(document).ready(function () {
+      if (isTouchDevice()) {
+        $("#level-title").text("Touch the Screen to Start");
+      }
+    });
+  </script>
 </body>
 
 </html>
