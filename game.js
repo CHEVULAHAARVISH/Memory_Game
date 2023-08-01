@@ -33,8 +33,8 @@ function animatePress(currentColor) {
       $("#" + currentColor).removeClass("pressed");
     }, 200);
   }
-// detecting if key is pressed then start 
-$(document).on("keypress", function () {
+// detecting if key is pressed then start or touch screen or anything
+$(document).on("keypress click touchstart", function () {
 
     if (!gameStarted) {
         $("#level-title").text("LEVEL "+level);
