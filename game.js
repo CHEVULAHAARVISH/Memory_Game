@@ -47,6 +47,7 @@ $(document).on("keypress", function () {
 function startOver(){
     level = 0;
     gamePattern=[];
+    userClickedPattern = [];
     gameStarted=false;
     
 
