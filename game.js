@@ -71,7 +71,7 @@ function checkAnswer(currentLevel) {
         if (isTouchDevice()) {
             $("h1").text("Touch the Screen to Restart");
         } else {
-            $("h1").text("Press A Key to Restart");
+            $("h1").text("Game Over,Press A Key to Restart");
         }
         waudio.play();
         startOver();
