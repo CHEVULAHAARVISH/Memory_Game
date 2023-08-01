@@ -24,7 +24,7 @@ $(".btn").on("click",function(){
 });
 
 function playSound(name) {
-    var audio = new Audio("/sounds/" + name + ".mp3");
+    var audio = new Audio("./sounds/" + name + ".mp3");
     audio.play();
 }
 function animatePress(currentColor) {
@@ -62,7 +62,7 @@ function checkAnswer(currentLevel) {
             }, 1000);
         }
     } else {
-        var waudio = new Audio("/sounds/wrong.mp3");
+        var waudio = new Audio("./sounds/wrong.mp3");
         $("body").addClass("game-over");
         setTimeout(function () {
           $("body").removeClass("game-over");
