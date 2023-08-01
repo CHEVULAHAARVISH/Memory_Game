@@ -68,7 +68,11 @@ function checkAnswer(currentLevel) {
         setTimeout(function () {
           $("body").removeClass("game-over");
         }, 300);
-        $("h1").text("Game Over, Press Any Key to Restart")
+        if (isTouchDevice()) {
+            $("h1").text("Touch the Screen to Restart");
+        } else {
+            $("h1").text("Press A Key to Restart");
+        }
         waudio.play();
         startOver();
         
